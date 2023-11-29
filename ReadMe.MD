@@ -34,40 +34,16 @@ Created a script named `old_backups.sh` on the target server:
 
 This scripts finds & deletes the file which is older than 7 days  
 
-  
 
-  
+2. Made the script executable:
 
- 
-
- 
-
- 
-
-2. Made the script executable: 
-
-   
 
 3.Cron Job 
 
-  
-
- Scheduled the script to run daily using a cron job: 
-
+Scheduled the script to run daily using a cron job: 
 - Open your crontab for editing: 
-
-   
-
 - Added the following line to schedule the script to run every day at midnight: 
-
-   
-
-Make sure to replace `/path/to/delete_old_backups.sh` with the actual path to your script. 
-
-  
+ Make sure to replace `/path/to/delete_old_backups.sh` with the actual path to your script. 
 
 Summary 
-
-  
-
 This documentation provides a comprehensive guide to creating a Jenkins pipeline for MongoDB backup and transfer, along with an automatic deletion process for older backup files on the target server. The pipeline ensures backups are transferred securely and locally stored files are managed efficiently. The cron job automates the deletion of older files, maintaining data cleanliness on the target server. 
